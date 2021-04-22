@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+<ThingDef ParentName="BaseMakeableGun">
+		<defName>MTB_GL_Vanilla</defName>
+		<label>Brügger-Thomet GL06</label>
+		<description>A lighter version of a regular grenade launcher with collapsible stock. Capable of firing a variety of different projectiles, albeit with slightly reduced effective range.</description>
+		<graphicData>
+			<texPath>BruggerThomet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	<soundInteract>Interact_Shotgun</soundInteract>
+    <statBases>
+		<Mass>2.05</Mass>
+      <WorkToMake>9500</WorkToMake>	
+      <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+	  <Steel>10</Steel>
+      <Chemfuel>40</Chemfuel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>	
+    <weaponTags>
+      	  <li>GunHeavy</li>		  
+    </weaponTags>
+	
+    <verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_GL_Vanilla</defaultProjectile>
+				<warmupTime>3.5</warmupTime>
+				<range>30</range>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<onlyManualCast>true</onlyManualCast>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<forcedMissRadius>0.5</forcedMissRadius>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+    </recipeMaker>	
+	
+    <tools>
+        <li>
+			<label>stock</label>
+			<capacities>
+            <li>Blunt</li>
+			</capacities>
+			<power>10</power>
+			<cooldownTime>2</cooldownTime>
+        </li>
+        <li>
+		    <label>barrel</label>
+            <capacities>
+            <li>Blunt</li>
+            <li>Poke</li>
+			</capacities>
+			<power>10</power>
+			<cooldownTime>2</cooldownTime>
+        </li>
+    </tools>
+
+
+
+</ThingDef>
+
+<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_GL_Vanilla</defName>
+		<label>grenade</label>
+		<graphicData>
+			<texPath>Things/Projectile/LauncherShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<explosionRadius>3.5</explosionRadius>
+			<speed>50</speed>
+		</projectile>
+    </ThingDef>
+</Defs>

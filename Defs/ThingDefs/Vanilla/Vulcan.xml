@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="BaseBullet">
+    <defName>Bullet_AKM_Vanilla</defName>
+    <label>AKM bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+      <speed>65</speed>
+    </projectile>
+	</ThingDef>
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>SNK_Vulkan_Vanilla</defName>
+    <label>Vulkan AKM</label>
+    <description>Probably the most infamous ancient assaunt rifle, known for its reliability and huge amounts it was produced in. This one has an intricate pattern that doesn't give any tactical advantage, but it does look pretty and expensive!</description>
+    <graphicData>
+      <texPath>Vulcan</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<techLevel>Industrial</techLevel>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<tradeability>Sellable</tradeability>
+	<thingSetMakerTags>
+		<li>RewardStandardMidFreq</li>
+		<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    <statBases>
+		<MarketValue>2000</MarketValue>
+      <Mass>3.3</Mass>
+	  <AccuracyTouch>0.58</AccuracyTouch>
+      <AccuracyShort>0.72</AccuracyShort>
+      <AccuracyMedium>0.68</AccuracyMedium>
+      <AccuracyLong>0.58</AccuracyLong>
+      <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+
+    </statBases>
+    <verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_AKM_Vanilla</defaultProjectile>
+				<burstShotCount>4</burstShotCount>
+				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+				<warmupTime>1</warmupTime>
+				<range>33</range>
+				<soundCast>MTB_AKShot</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	
+
+	
+	<weaponTags>
+	  <li>IndustrialGunAdvanced</li> 
+    </weaponTags>
+	
+     <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+
+</Defs>

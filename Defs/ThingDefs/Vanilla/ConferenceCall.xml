@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<ThingDef ParentName="BaseGunWithQuality">
+		<defName>MGRC_ConferenceCall_Vanilla</defName>
+		<label>Conference Call</label>
+		<description>Automatic shotgun with integrated stabilizing system that significantly reduces recoil. Considered to be one of the engineering marvels of one interplanetary corporation. \n\nLet's just ping everyone all at once.</description>
+		<graphicData>
+			<texPath>ConferenceCall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<soundInteract>MTB_Pick_HeavyShotgun</soundInteract>
+		<tradeability>Sellable</tradeability>
+		<thingSetMakerTags>
+		<li>RewardStandardMidFreq</li>
+		<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+				<MarketValue>2600</MarketValue>
+				<Mass>3.1</Mass>
+				<AccuracyTouch>0.85</AccuracyTouch>
+				<AccuracyShort>0.88</AccuracyShort>
+				<AccuracyMedium>0.79</AccuracyMedium>
+				<AccuracyLong>0.60</AccuracyLong>
+				<RangedWeapon_Cooldown>1.10</RangedWeapon_Cooldown>
+
+		</statBases>
+
+		
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ConferenceCall_Vanilla</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>23.9</range>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>Shot_ConferenceCall</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	
+
+		<tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+		
+	<weaponTags>
+      <li>SpacerGun</li>
+    </weaponTags>
+						
+	
+					
+</ThingDef>
+
+<ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ConferenceCall_Vanilla</defName>
+    <label>shotgun blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>24</damageAmountBase>
+      <stoppingPower>3.5</stoppingPower>
+      <armorPenetrationBase>0.33</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+</Defs>

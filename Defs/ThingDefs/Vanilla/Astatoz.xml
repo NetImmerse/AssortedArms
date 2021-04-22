@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>PDZ_Astatoz_Vanilla</defName>
+    <label>AMR-16-AZ</label>
+    <description>A prototype charge assault rifle developed on a cold, harsh urbworld. Being chambered in 8x35mm rounds essentially makes it an automatic sniper rifle.</description>
+    <graphicData>
+      <texPath>Astatoz</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <Mass>3.92</Mass>
+	  <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+		 <AccuracyTouch>0.55</AccuracyTouch>
+		<AccuracyShort>0.75</AccuracyShort>
+		<AccuracyMedium>0.90</AccuracyMedium>
+		<AccuracyLong>0.80</AccuracyLong>
+		<MarketValue>2400</MarketValue>
+    </statBases>
+
+	<thingSetMakerTags>
+		<li>RewardStandardMidFreq</li>
+		<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Astatoz_Vanilla</defaultProjectile>
+        <warmupTime>1.6</warmupTime>
+        <range>60.9</range>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <soundCast>MTB_CoilShot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	
+	
+	<weaponTags>
+      <li>SniperRifle</li>
+	  <li>SpacerGun</li> 
+    </weaponTags>
+
+	<tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Astatoz_Vanilla</defName>
+    <label>AMR-16-AZ shot</label>
+    <graphicData>
+      <texPath>Things/Projectile/ChargeLanceShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>26</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+      <speed>90</speed>
+    </projectile>
+  </ThingDef>
+
+
+</Defs>

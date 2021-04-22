@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>SNK_Asiimov_Vanilla</defName>
+    <label>ASM Arctic Warfare</label>
+    <description>Sniper rifle of an ancient origin, known for its revolutionary design despite the fact it was literally designed by three guys in a shed. This unit has a nice looking pattern that doesn't give any tactical advantage, but it does look pretty and expensive!</description>
+    <graphicData>
+      <texPath>Asiimov</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>MTB_AWPDraw</soundInteract>
+    <statBases>
+		<MarketValue>2200</MarketValue>
+		<WorkToMake>30000</WorkToMake>
+      <Mass>6.5</Mass>
+	  <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.78</AccuracyShort>
+      <AccuracyMedium>0.96</AccuracyMedium>
+      <AccuracyLong>0.92</AccuracyLong>
+	  <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+
+    </statBases>
+
+	<thingSetMakerTags>
+		<li>RewardStandardMidFreq</li>
+		<li>RewardStandardQualitySuper</li>
+	</thingSetMakerTags>
+	
+	<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_AWP_Vanilla</defaultProjectile>
+				<warmupTime>2.4</warmupTime>
+				<range>80</range>
+				<soundCast>MTB_AWPShot</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	
+		
+	
+	<weaponTags>
+      <li>SniperRifle</li>
+	  <li>IndustrialGunAdvanced</li> 
+    </weaponTags>
+    <tools>
+       <li>
+			<label>stock</label>
+			<capacities>
+            <li>Blunt</li>
+			</capacities>
+			<power>10</power>
+			<cooldownTime>2</cooldownTime>
+        </li>
+        <li>
+		    <label>barrel</label>
+            <capacities>
+            <li>Blunt</li>
+            <li>Poke</li>
+			</capacities>
+			<power>12</power>
+			<cooldownTime>2</cooldownTime>
+        </li>
+	</tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_AWP_Vanilla</defName>
+    <label>AWP bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>22</damageAmountBase>
+      <stoppingPower>1.4</stoppingPower>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>
+
+
+</Defs>

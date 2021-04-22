@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="BaseWeapon">
+    <defName>NGE_Longinus_Vanilla</defName>
+		<label>elder spear</label>
+		<techLevel>Spacer</techLevel>
+		<useHitPoints>false</useHitPoints>
+		<description>Replica of an ancient spear made of unknown material. The original one is said to have the power to slay beings known as Angels, and is resting on a certain moon since long ago.</description>
+		<graphicData>
+			<texPath>Things/Longinus_NGE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <soundInteract>Interact_BeatFire</soundInteract>
+    <statBases>
+      <Flammability>0</Flammability>
+		<DeteriorationRate>0</DeteriorationRate>
+		<MarketValue>3200</MarketValue>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.72</AccuracyTouch>
+      <AccuracyShort>0.95</AccuracyShort>
+      <AccuracyMedium>0.98</AccuracyMedium>
+      <AccuracyLong>0.98</AccuracyLong>
+      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Longinus_Thrown_Vanilla</defaultProjectile>
+        <warmupTime>4</warmupTime>
+        <range>85.9</range>
+        <soundCast>NGE_LonginusThrow</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11</power>
+         <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>18</power>
+         <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Longinus_Thrown_Vanilla</defName>
+    <label>elder spear</label>
+    <graphicData>
+      <texPath>Things/Longinus_NGE_thrown</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>RangedStab</damageDef>
+      <damageAmountBase>40</damageAmountBase>
+      <stoppingPower>6</stoppingPower>
+      <armorPenetrationBase>3</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+
+
+</Defs>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <ThingDef ParentName="BaseMakeableGun">
+    <defName>SNK_RedGlare_Vanilla</defName>
+    <label>Red Glare</label>
+    <description>Automatic rocket launcher fed with a drum magazine. Capable of firing a volley of small rockets.</description>
+    <graphicData>
+      <texPath>RedGlare</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>MTB_RedGlare_Reload</soundInteract>
+    <statBases>
+	<WorkToMake>22000</WorkToMake>
+      <Mass>14</Mass>
+		<RangedWeapon_Cooldown>6.5</RangedWeapon_Cooldown>
+
+    </statBases>
+	<costList>
+      <Steel>120</Steel>
+	  <Chemfuel>40</Chemfuel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+	  <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+	<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_RedGlare_Vanilla</defaultProjectile>
+				<warmupTime>5.5</warmupTime>
+				<range>60</range>
+				<burstShotCount>4</burstShotCount>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<soundCast>MTB_RedGlareShot</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<onlyManualCast>true</onlyManualCast>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<forcedMissRadius>2</forcedMissRadius>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	
+
+	
+	<weaponTags>
+	  <li>IndustrialGunAdvanced</li> 
+    </weaponTags>
+    <tools>
+
+        <li>
+		    <label>barrel</label>
+            <capacities>
+            <li>Blunt</li>
+			</capacities>
+			<power>16</power>
+			<cooldownTime>3</cooldownTime>
+        </li>
+    </tools>
+  </ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_RedGlare_Vanilla</defName>
+		<label>Red Glare rocket</label>
+		<graphicData>
+			<texPath>Things/Ammo/Advanced/RedGlare/Proj</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<explosionRadius>2</explosionRadius>
+			<speed>70</speed>
+		</projectile>
+    </ThingDef>
+
+</Defs>

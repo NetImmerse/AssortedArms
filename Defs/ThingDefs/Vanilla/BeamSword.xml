@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MTB_FusionBlade_Vanilla</defName>
+    <label>fusion blade</label>
+    <description>Plasteel core heated with plasma coated in microthin magnetic field. Slices flesh and armor like butter.</description>
+    <graphicData>
+      <texPath>FusionBlade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+	<techLevel>Spacer</techLevel>
+    <statBases>
+      <WorkToMake>32000</WorkToMake>
+      <Mass>1.35</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <costList>
+      <Plasteel>40</Plasteel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>0.79</cooldownTime>
+      </li>
+    </tools>
+
+	<recipeMaker>
+		<recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>ChargedShot</researchPrerequisite>
+    </recipeMaker>
+
+  </ThingDef>
+	
+	
+	
+</Defs>

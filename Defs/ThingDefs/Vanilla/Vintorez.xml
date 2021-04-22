@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_VSS_Vanilla</defName>
+		<label>subsonic bullet</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>13</damageAmountBase>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
+
+  <ThingDef ParentName="BaseMakeableGun">
+    <defName>SNK_VSS_Vanilla</defName>
+    <label>VSS Vintorez</label>
+    <description>Lightweight sniper rifle with an integrated suppressor designed for urban warfare. Special subsonic ammunition allows to strike targets without revealing user's position, but comes with a cost of reduced effective range.</description>
+    <graphicData>
+      <texPath>VSS</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+	<WorkToMake>14000</WorkToMake>
+      <Mass>3.7</Mass>
+			<AccuracyTouch>0.45</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.79</AccuracyMedium>
+			<AccuracyLong>0.36</AccuracyLong>
+			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+
+    </statBases>
+	<costList>
+      <Steel>60</Steel>
+	  <WoodLog>20</WoodLog>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+	<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_VSS_Vanilla</defaultProjectile>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+				<warmupTime>1.7</warmupTime>
+				<range>55</range>
+				<soundCast>MTB_VintorezShot</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>0</muzzleFlashScale>
+			</li>
+		</verbs>
+	
+
+	
+	<weaponTags>
+	  <li>IndustrialGunAdvanced</li> 
+    </weaponTags>
+   <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+
+</Defs>

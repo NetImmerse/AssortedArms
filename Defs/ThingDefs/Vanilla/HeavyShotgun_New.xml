@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <ThingDef ParentName="BaseMakeableGun">
+    <defName>SNK_HeavyShotgun_Vanilla</defName>
+    <label>heavy shotgun</label>
+    <description>Semi-auto heavy shotgun designed in a distant midworld centuries ago. That midworld has met its end after a mysterious storm covered the entire planet and consumed every living being on it.</description>
+    <graphicData>
+      <texPath>HeavyShotgun_New</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>MTB_Pick_HeavyShotgun</soundInteract>
+    <statBases>
+	<WorkToMake>15000</WorkToMake>
+      <Mass>4.2</Mass>
+	  <AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.92</AccuracyShort>
+			<AccuracyMedium>0.67</AccuracyMedium>
+			<AccuracyLong>0.45</AccuracyLong>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+
+    </statBases>
+
+	<thingSetMakerTags>
+		<li>RewardStandardMidFreq</li>
+		<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+	<costList>
+      <Steel>60</Steel>
+	  <Chemfuel>30</Chemfuel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+	<researchPrerequisites>
+	<li>GasOperation</li>
+	</researchPrerequisites>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_HeavyShotgun_Vanilla</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>22</range>
+				<soundCast>MTB_HeavyShot</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	
+	
+	<weaponTags>
+	  <li>IndustrialGunAdvanced</li>  
+    </weaponTags>
+
+	<tools>
+        <li>
+			<label>stock</label>
+			<capacities>
+            <li>Blunt</li>
+			</capacities>
+			<power>10</power>
+			<cooldownTime>2</cooldownTime>
+        </li>
+        <li>
+		    <label>barrel</label>
+            <capacities>
+            <li>Blunt</li>
+            <li>Poke</li>
+			</capacities>
+			<power>13</power>
+			<cooldownTime>2</cooldownTime>
+        </li>
+    </tools>
+
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+		<defName>Bullet_HeavyShotgun_Vanilla</defName>
+		<label>heavy shotgun blast</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Shotgun</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>22</damageAmountBase>
+			<stoppingPower>3.2</stoppingPower>
+			<armorPenetrationBase>0.18</armorPenetrationBase>
+			<speed>55</speed>
+		</projectile>
+  </ThingDef>
+
+
+</Defs>

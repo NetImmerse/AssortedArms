@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <SoundDef>
+    <defName>MTB_VintorezShot</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Fired/Shot_VSS</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>15.2941</min>        
+          <max>15.2941</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>1.091765</min>        
+          <max>1</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+   <SoundDef>
+    <defName>MTB_SIGShot</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <!-- <maxSimultaneous>1</maxSimultaneous>   -->
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Fired/Shot_SIG</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>18.2941</min>        
+          <max>18.2941</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>1.091765</min>        
+          <max>1</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+   <SoundDef>
+    <defName>MTB_SCARShot</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <!-- <maxSimultaneous>1</maxSimultaneous>   -->
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Fired/Shot_SCAR</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>18.2941</min>        
+          <max>18.2941</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>1.091765</min>        
+          <max>1</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+     <SoundDef>
+    <defName>MTB_AKShot</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <!-- <maxSimultaneous>1</maxSimultaneous>   -->
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Fired/Shot_AKM</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>12.2941</min>        
+          <max>12.2941</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>1.091765</min>        
+          <max>1</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>MTB_BozarShot</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <!-- <maxSimultaneous>1</maxSimultaneous>   -->
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Fired/Shot_Bozar</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>18.2941</min>        
+          <max>18.2941</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>1.091765</min>        
+          <max>1</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+   <SoundDef>
+    <defName>MTB_HeavyShot</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <!-- <maxSimultaneous>1</maxSimultaneous>   -->
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Fired/Shot_HeavyShotgun</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>18.2941</min>        
+          <max>18.2941</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>1.091765</min>        
+          <max>1</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>NGE_LonginusThrow</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <!-- <maxSimultaneous>1</maxSimultaneous>   -->
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Fired/Shot_Longinus</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>24.2941</min>
+          <max>24.2941</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>1.091765</min>        
+          <max>1</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>MTB_AWPShot</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <!-- <maxSimultaneous>1</maxSimultaneous>   -->
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Fired/Shot_AWP</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>18.2941</min>        
+          <max>18.2941</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>1.091765</min>        
+          <max>1</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>MTB_AWPDraw</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <!-- <maxSimultaneous>1</maxSimultaneous>   -->
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Fired/Draw_AWP</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>13.2941</min>        
+          <max>13.2941</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>1.091765</min>        
+          <max>1</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>MTB_Pick_HeavyShotgun</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <!-- <maxSimultaneous>1</maxSimultaneous>   -->
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Fired/Pick_HeavyShotgun</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>15.2941</min>        
+          <max>15.2941</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>1.091765</min>        
+          <max>1</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+    <SoundDef>
+    <defName>MTB_RedGlareShot</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <!-- <maxSimultaneous>1</maxSimultaneous>   -->
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Fired/Shot_RedGlare</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>30.2941</min>        
+          <max>30.2941</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>1.091765</min>        
+          <max>1</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+      <SoundDef>
+    <defName>MTB_RedGlare_Reload</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <!-- <maxSimultaneous>1</maxSimultaneous>   -->
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Fired/RedGlare_Reload</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>15.2941</min>        
+          <max>15.2941</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>1.091765</min>        
+          <max>1</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>MTB_DeagleShot</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <!-- <maxSimultaneous>1</maxSimultaneous>   -->
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Fired/Shot_Deagle</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>18.2941</min>        
+          <max>18.2941</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>1.091765</min>        
+          <max>1</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>MTB_SpasShot</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <!-- <maxSimultaneous>1</maxSimultaneous>   -->
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Fired/Shot_Spas12</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>16.2941</min>        
+          <max>16.2941</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>1.091765</min>        
+          <max>1</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+    <SoundDef>
+    <defName>MTB_GaussShot</defName>  
+    <context>MapOnly</context>
+    <eventNames />   
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Fired/Shot_Gauss</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>20.2941</min>        
+          <max>20.2941</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>1</min>        
+          <max>1</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+
+ <SoundDef>
+    <defName>MTB_CoilShot</defName>  
+    <context>MapOnly</context>
+    <eventNames />   
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Fired/Shot_Coil</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>20.2941</min>        
+          <max>20.2941</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>1</min>        
+          <max>1</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+
+</Defs>

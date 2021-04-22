@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MTB_Justitia_Vanilla</defName>
+    <label>Justitia</label>
+    <description>Ancient weapon used by employees of a certain power producing corporation centuries ago. It is strongly advised not to remove bandages the blade is covered in.</description>
+    <graphicData>
+      <texPath>Things/Justitia</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<techLevel>Spacer</techLevel>
+	<thingSetMakerTags>
+		<li>RewardStandardMidFreq</li>
+		<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    <statBases>
+	<MarketValue>1600</MarketValue>
+      <Mass>5.35</Mass>
+    </statBases>
+	<equippedAngleOffset>-65</equippedAngleOffset>
+	
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.35</cooldownTime>
+      </li>
+	  <li>
+        <label>point</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.4</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>36</power>
+        <cooldownTime>1.79</cooldownTime>
+      </li>
+    </tools>
+	
+
+	
+
+  </ThingDef>
+	
+	
+	
+</Defs>

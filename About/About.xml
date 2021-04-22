@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>[Vanilla] Assorted Arms</name>
+	<author>NetImmerse</author>
+	<packageId>NTMS.AssortedArmsVanilla</packageId>
+	<url></url>
+	<supportedVersions>
+		<li>1.2</li>
+	</supportedVersions>
+	<description>A bunch of various weapons.</description>
+</ModMetaData>
