@@ -54,7 +54,7 @@ namespace AssortedArms
 			foreach (var weapon in weapons)
 			{
 				if (settings.weaponStates == null) settings.weaponStates = new Dictionary<string, bool>();
-				if (!settings.weaponStates.ContainsKey(weapon.defName))
+				if (weapon.thingCategories != null && weapon.thingCategories.Contains(DefDatabase<ThingCategoryDef>.GetNamed("WeaponsRanged")) && !settings.weaponStates.ContainsKey(weapon.defName))
 				{
 					settings.weaponStates[weapon.defName] = true;
 				}
